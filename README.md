@@ -21,6 +21,9 @@ after having run
 the first time for fixing dependencies.  
 Note that the actual code does  not follow instructions given in Day4. I jumped to Day5 after Day3 test the execution on EC2.
 
+For easiness in uploading, the repo contains only the source files are uploaded in /src/main/scala/com/cloudComp/, without any dependencies.  
+The generated JAR file is in the /bin directory, along with the files required by DurableStorage instances.
+
 ### Run Instructions
 At execution, the user will be prompted to choose an execution mode:
 > **Please, choose an execution mode:  
