@@ -32,7 +32,7 @@ At execution, the user will be prompted to choose an execution mode:
 > \>_**
 
 Any choice other than 1 and 2 will result in program termination.  
-Choice 1 leads to an interactive execution, where commands typed by the user are executed one after another.  
+Choice 1 leads to an interactive execution, where commands typed by the user are executed one after another. Commands should be exactly in the form described in the project instructions, like Store(key,value), Lookup(key), Delete(key). For instance, no there should be no blankspace after the ',' in Store(key,value): blankspace case not handled.  
 Choice 2 jumps to the execution scenario described at Day3-Part2 where randomly picked keys are stored in first place, then randomly chosen operations are performed. At this level, the results of Lookup() operations are printed on the screen, but not that of Store() and Delete(). Those consequences of those two can be seen in live if the files used by the DurableStorage instances, storage_file1.txt, storage_file2.txt and storage_file3.txt are open in a text editor during the execution, in VSCode for instance.  
 It is worth mentioning that the entries stored in each file are reloaded back to the StoreSystem instances at program restart. It is therefore important to flush those files between two consecutive executions in mode 2 to avoid memory saturation if the number of requests chosen is big enough, or just to start the system from ground.
 
